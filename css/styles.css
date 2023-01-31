@@ -17,11 +17,11 @@
     transition: transform linear 0.4s;
 }
 
-/* Box Sudo Selector  */
-
+/* Box Sudo Selector - applies to only .box divs  */
 
 .box:hover {
-    transform: translate(-10px, 10px);
+    transform: scale(1.2);
+    /* transform: translate(-10px, 10px); */
     color: black;
     background-color: lightcoral;
     cursor: pointer;
@@ -30,9 +30,11 @@
 /* Box Translate  */
 
 .special {
-    transform: translateY(-10px);
     background-color: lightblue;
+    color: black;
+    transform: translate(0, 18px);
 }
+
 
 
 
@@ -44,6 +46,7 @@
     display: flex;
     position: relative;
     width: 100px;
+    height: 150px;
 }
 
 .logo-container > img {
@@ -66,4 +69,80 @@
 .third {
     transform: translate(40px, 40px);
     z-index: 3;
+}
+
+
+
+
+
+
+
+/* Emoji Playing Card Transforms  */
+
+
+.card {
+    height: 240px;
+    width: 400px;
+    border: solid lightslategray 1px ;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);    color: white;
+    transition: transform linear 0.4s;
+}
+
+.playing-card-container {
+    position: relative;
+    display: flex;
+    width: 900px;
+    gap: 1em;
+}
+
+/* Emoji Playing Card Hover Effect  */
+
+.card:hover {
+    transform: rotate(5deg);
+    color: black;
+    background-color: lightcoral;
+    cursor: pointer;
+}
+
+/* Emoji Playing Card Positions  */
+
+.card-icons:nth-child(2) {
+    position: absolute;
+    left: 12px;
+    top: 10px;
+}
+.card-icons:nth-child(3) {
+    position: absolute;
+    right: 12px;
+    bottom: 10px;
+}
+
+.card-icons:nth-child(4) {
+    position: absolute;
+    right: 12px;
+    top: 10px;
+}
+
+.card-icons:nth-child(5) {
+    position: absolute;
+    left: 12px;
+    bottom: 10px;
+}
+
+/* Emoji Playing Card Fonts / Sizing  */
+
+.card > .card-text {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 12px; 
+;}
+
+.card-icons-text {
+    font-size: 8px; 
+    text-align: center;
 }
