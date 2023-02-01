@@ -110,7 +110,7 @@
     cursor: pointer;
 }
 
-/* Emoji Playing Card Positions  */
+/* 1st Emoji Playing Card Positions  */
 
 .card-icons:nth-child(2) {
     position: absolute;
@@ -120,7 +120,7 @@
 .card-icons:nth-child(3) {
     position: absolute;
     right: 12px;
-    bottom: 10px;
+    bottom: 10px; 
 }
 
 .card-icons:nth-child(4) {
@@ -134,6 +134,45 @@
     left: 12px;
     bottom: 10px;
 }
+
+/* 2nd Emoji Playing Card Positions  */
+
+.card2 {
+row-gap: -10px;
+left: -150px;
+top: 10px;
+transform: rotate(5deg);
+gap: 5px;
+justify-content: center;
+}
+
+.card2:hover {
+    transform: translateY(-50px);
+    color: black;
+    background-color: lightcoral;
+    cursor: pointer;
+}
+
+/* 3rd Emoji Playing Card Positions  */
+
+.card3 {
+    row-gap: -10px;
+    left: -250px;
+    top: 10px;
+    transform: rotate(10deg);
+    gap: 5px;
+    justify-content: center;
+    }
+    
+    .card3:hover {
+        transform: translateY(-50px);
+        color: black;
+        background-color: lightcoral;
+        cursor: pointer;
+    }
+    
+
+
 
 /* Emoji Playing Card Fonts / Sizing  */
 
